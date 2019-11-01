@@ -107,7 +107,7 @@ accumStats accum (Element object) =
     asMaxArea = max (asMaxArea accum) (area object),
     asMaxCircumference = max (asMaxCircumference accum) (circum object) }
 
-accumStats accum (Group (x:xs)) = accumStats  (accumStats accum x) (Group xs)
+accumStats accum (Group (x:xs)) = accumStats (accumStats accum x) (Group xs)
 
 
 area :: Object -> Area
