@@ -143,7 +143,16 @@ foldMapStatistics dobject =  Statistics {
     maxArea = asMaxArea accum,
     maxCircumference = asMaxCircumference accum }
   where
-    accum = foldMap (accumStats mempty) dobject
+    accum = foldMap (accumStats' mempty) dobject
 
+accumStats' :: AccumStats -> Drawing Object -> AccumStats
+accumStats' accum (Element object) =
+  AccumStats {
+    asCount = asCount accum + 1,
+    asSumArea = asSumArea accum + area object,
+    asSumCircumference = asSumCircumference accum + circum object,
+    asMaxArea = max (asMaxArea accum) (area object),
+    asMaxCircumference = max (asMaxCircumference accum) (circum object) }
 
+accumStats' accum (Group (x:xs)) = accumStats (accumStats accum x) (Group xs)
 
