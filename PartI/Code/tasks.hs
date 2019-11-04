@@ -1,5 +1,58 @@
 {-# LANGUAGE RecordWildCards #-}
 
+-- task I.1 hamming list
+merge :: [Int] -> [Int] -> [Int]
+merge [] _ = []
+merge _ [] = []
+merge xss@(x:xs) yss@(y:ys)
+  | x == y = x : merge xs ys
+  | x < y  = x : merge xs yss
+  | x > y  = y : merge xss ys
+
+
+hamming :: [Int]
+hamming = 1 : merge (map (2*) hamming) (merge (map (3*) hamming) (map (5*) hamming))
+
+
+-- task I.4 interval arithmetic
+-- TODO : enforce the invariant -- using by exposing
+-- specific constructor
+
+data Ivl = Ivl Double Double deriving Show
+
+instance Num Ivl where
+  Ivl a b + Ivl c d = Ivl (a + b) (c + d)
+  Ivl a b - Ivl c d = Ivl (a - b) (c - d)
+  Ivl a b * Ivl c d = Ivl (minimum l) (maximum l)
+    where
+      l = [ x * y | x <- [a, b],
+                    y <- [c ,d]]
+
+  abs i@(Ivl a b) | a >= 0    = i
+                  | b <= 0    = Ivl (-b) (-a)
+                  | otherwise = Ivl 0 (max (-a) b)
+
+  signum (Ivl a b) = Ivl (signum a) (signum b)
+
+  fromInteger i = Ivl (fromInteger i) (fromInteger i)
+
+instance Fractional Ivl where
+  fromRational r = Ivl (fromRational r) (fromRational r)
+
+  Ivl a b / Ivl c d = Ivl (minimum l) (maximum l)
+    where
+      l = [ x / y | x <- [a, b],
+                    y <- [c, d]]
+
+(+/-) :: Double -> Double -> Ivl
+(+/-) a b = undefined
+
+
+-- tests for task I.4
+testIvl :: Bool
+testIvl = undefined
+
+
 -- task I.5
 type Position = (Double, Double)
 type Length = Double
@@ -13,9 +66,8 @@ data Object =
  | Circle {
      centre :: Position,
      radius :: Length }
-   deriving Show
 
-data Drawing a = Element a | Group [Drawing a] deriving Show
+data Drawing a = Element a | Group [Drawing a]
 
 data Statistics =
   Statistics {
@@ -32,7 +84,7 @@ data AccumStats =
     asSumCircumference :: Length,
     asMaxArea :: Area,
     asMaxCircumference :: Length
-  } deriving Show
+  }
 
 -- task I.5 1
 statistics :: Drawing Object -> Statistics
@@ -54,7 +106,7 @@ accumStats accum (Element object) =
     asSumCircumference = asSumCircumference accum + circum object,
     asMaxArea = max (asMaxArea accum) (area object),
     asMaxCircumference = max (asMaxCircumference accum) (circum object) }
-accumStats accum (Group [])     = accum
+
 accumStats accum (Group (x:xs)) = accumStats (accumStats accum x) (Group xs)
 
 
@@ -63,15 +115,14 @@ area (Rectangle{ .. }) = width * height
 area (Circle{ .. })    = pi * radius * radius
 
 circum :: Object -> Length
-circum (Rectangle { .. }) = (width + height) * 2
+circum (Rectangle { .. }) = (width + height) /2
 circum (Circle { .. })    = pi * radius * 2
 
 -- task I.5 2
 
 instance Foldable Drawing where
   foldMap f (Element object) = f object
-  foldMap f (Group [])       = mempty
-  foldMap f (Group (x:xs))   = foldMap f x <> foldMap f (Group xs)
+  foldMap f (Group (x:xs)) = foldMap f x <> foldMap f (Group xs)
 
 instance Semigroup AccumStats where
   a <> b =
@@ -92,14 +143,16 @@ foldMapStatistics dobject =  Statistics {
     maxArea = asMaxArea accum,
     maxCircumference = asMaxCircumference accum }
   where
-    accum = foldMap accumStats' dobject
+    accum = foldMap (accumStats' mempty) dobject
 
-accumStats' :: Object -> AccumStats
-accumStats' object =
+accumStats' :: AccumStats -> Drawing Object -> AccumStats
+accumStats' accum (Element object) =
   AccumStats {
-    asCount = 1,
-    asSumArea = area object,
-    asSumCircumference = circum object,
-    asMaxArea = area object,
-    asMaxCircumference = circum object }
+    asCount = asCount accum + 1,
+    asSumArea = asSumArea accum + area object,
+    asSumCircumference = asSumCircumference accum + circum object,
+    asMaxArea = max (asMaxArea accum) (area object),
+    asMaxCircumference = max (asMaxCircumference accum) (circum object) }
+
+accumStats' accum (Group (x:xs)) = accumStats (accumStats accum x) (Group xs)
 
