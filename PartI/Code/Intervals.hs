@@ -3,8 +3,8 @@ module Intervals (newIvl, (+/-))  where
 data Ivl = Ivl Double Double deriving Show
 
 instance Num Ivl where
-  Ivl a b + Ivl c d = Ivl (a + b) (c + d)
-  Ivl a b - Ivl c d = Ivl (a - b) (c - d)
+  Ivl a b + Ivl c d = Ivl (a + c) (b + d)
+  Ivl a b - Ivl c d = Ivl (a - d) (b - c)
   Ivl a b * Ivl c d
       | (not . null) $ filter isNaN l = error "operation undefined -- NaN"
       | otherwise = Ivl (minimum l) (maximum l)
