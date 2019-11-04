@@ -99,7 +99,16 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT Hamming.png
+INPUT ./Hamming.png
 OUTPUT Report.pdf
+INPUT ./Hamming.png
+INPUT cyclic.jpg
+INPUT ./cyclic.jpg
+INPUT ./cyclic.jpg
+INPUT Sheet.png
+INPUT ./Sheet.png
+INPUT ./Sheet.png
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT Report.aux
 INPUT Report.run.xml

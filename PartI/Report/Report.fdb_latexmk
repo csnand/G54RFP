@@ -1,10 +1,11 @@
 # Fdb version 3
-["biber Report"] 1572883747 "Report.bcf" "Report.bbl" "Report" 1572884845
-  "Report.bcf" 1572884766 91024 14419807eed290ce7c1bf5a3a7df3072 "pdflatex"
+["biber Report"] 1572885126 "Report.bcf" "Report.bbl" "Report" 1572887280
+  "../bibs/ref.bib" 0 -1 0 ""
+  "Report.bcf" 1572887162 91024 14419807eed290ce7c1bf5a3a7df3072 "pdflatex"
   (generated)
   "Report.bbl"
   "Report.blg"
-["pdflatex"] 1572884845 "Report.tex" "Report.pdf" "Report" 1572884845
+["pdflatex"] 1572887280 "Report.tex" "Report.pdf" "Report" 1572887280
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1557554374 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1557554374 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1557554374 1288 655e228510b4c2a1abe905c368440826 ""
@@ -57,13 +58,16 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1557554374 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1568099658 3106380 436fef8c2e0ca660ce1dd89198cfa583 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1568099650 7979416 905bd2c43555b4990644cacd2a400fe1 ""
-  "Report.aux" 1572884766 1146 0a719178371878e8b431dba29f8bf930 "pdflatex"
-  "Report.bbl" 1572883748 466 d461c786d5ba60caa26aa3f363275b19 "biber Report"
-  "Report.run.xml" 1572884766 2320 d5463b3306628a85e552a253e11f835e "pdflatex"
-  "Report.tex" 1572884842 832 14cd1db157eb472275740bd1cfffa168 ""
+  "Hamming.png" 1572885264 15460 3eeed9f05f59d59b454db53829dfd5fd ""
+  "Report.aux" 1572887162 1542 ebee81ba2ad82c58c7948baf99d63f3b "pdflatex"
+  "Report.bbl" 1572885083 0 d41d8cd98f00b204e9800998ecf8427e "biber Report"
+  "Report.run.xml" 1572887162 2320 d5463b3306628a85e552a253e11f835e "pdflatex"
+  "Report.tex" 1572887279 2824 2f887dc503565ec0b9391ac2af388979 ""
+  "Sheet.png" 1572886244 32955 52b6752255e8a5ea45ca61a0508d0a4c ""
+  "cyclic.jpg" 1572842405 135304 0976d249341046fd2b2a9a73ff8c323a ""
   (generated)
-  "Report.bcf"
   "Report.run.xml"
+  "Report.bcf"
   "Report.aux"
-  "Report.pdf"
   "Report.log"
+  "Report.pdf"

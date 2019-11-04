@@ -18,6 +18,9 @@
     "biblatex"
     "float"
     "graphicx")
+   (LaTeX-add-labels
+    "fig:taskI.1"
+    "fig:sheet")
    (LaTeX-add-bibliographies
     "../bibs/ref"))
  :latex)
