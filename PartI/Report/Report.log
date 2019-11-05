@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  4 NOV 2019 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  5 NOV 2019 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,37 +459,75 @@ e
 <Hamming.png, id=1, 534.49687pt x 142.28156pt>
 File: Hamming.png Graphic file (type png)
 <use Hamming.png>
-Package pdftex.def Info: Hamming.png  used on input line 38.
+Package pdftex.def Info: Hamming.png  used on input line 36.
 (pdftex.def)             Requested size: 227.62204pt x 60.59152pt.
 <cyclic.jpg, id=2, 2620.79124pt x 1084.05pt>
 File: cyclic.jpg Graphic file (type jpg)
 <use cyclic.jpg>
-Package pdftex.def Info: cyclic.jpg  used on input line 45.
+Package pdftex.def Info: cyclic.jpg  used on input line 43.
 (pdftex.def)             Requested size: 227.62204pt x 94.13625pt.
 <Sheet.png, id=3, 470.50781pt x 284.56313pt>
 File: Sheet.png Graphic file (type png)
 <use Sheet.png>
-Package pdftex.def Info: Sheet.png  used on input line 69.
-(pdftex.def)             Requested size: 235.25333pt x 142.2812pt.
+Package pdftex.def Info: Sheet.png  used on input line 64.
+(pdftex.def)             Requested size: 282.30685pt x 170.73918pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Hamming.png (PNG copy)> 
 <./cyclic.jpg> <./Sheet.png (PNG copy)>]
+<SBRAL-Drop.png, id=12, 406.51875pt x 368.87813pt>
+File: SBRAL-Drop.png Graphic file (type png)
+<use SBRAL-Drop.png>
+Package pdftex.def Info: SBRAL-Drop.png  used on input line 102.
+(pdftex.def)             Requested size: 243.91312pt x 221.32857pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 127.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 127.
+ [2 <./SBRAL-Drop.png (PNG copy)>]
+<Intervals.png, id=16, 719.68875pt x 813.0375pt>
+File: Intervals.png Graphic file (type png)
+<use Intervals.png>
+Package pdftex.def Info: Intervals.png  used on input line 143.
+(pdftex.def)             Requested size: 287.87039pt x 325.20924pt.
+ [3 <./Intervals.png (PNG copy)>]
+<Stats.png, id=21, 532.23843pt x 395.97937pt>
+File: Stats.png Graphic file (type png)
+<use Stats.png>
+Package pdftex.def Info: Stats.png  used on input line 178.
+(pdftex.def)             Requested size: 227.62204pt x 169.34335pt.
+<StatsFoldMap.png, id=22, 542.77782pt x 447.92343pt>
+File: StatsFoldMap.png Graphic file (type png)
+<use StatsFoldMap.png>
+Package pdftex.def Info: StatsFoldMap.png  used on input line 185.
+(pdftex.def)             Requested size: 227.62204pt x 187.84633pt.
+<StatsBonus.png, id=23, 554.82281pt x 409.53pt>
+File: StatsBonus.png Graphic file (type png)
+<use StatsBonus.png>
+Package pdftex.def Info: StatsBonus.png  used on input line 203.
+(pdftex.def)             Requested size: 227.62204pt x 168.0146pt.
+<StatsBonusFoldMap.png, id=24, 520.19344pt x 593.21625pt>
+File: StatsBonusFoldMap.png Graphic file (type png)
+<use StatsBonusFoldMap.png>
+Package pdftex.def Info: StatsBonusFoldMap.png  used on input line 210.
+(pdftex.def)             Requested size: 227.62204pt x 259.57672pt.
+ [4 <./Stats.png (PNG copy)> <./StatsFoldMap.png (PNG copy)>]
 
-./Report.tex:98: LaTeX Error: \begin{normalsize} on input line 29 ended by \end
-{document}.
+./Report.tex:223: LaTeX Error: \begin{normalsize} on input line 29 ended by \en
+d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 \end{document}
-                   
+l.223 \end{document}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2] (./Report.aux)
+[5 <./StatsBonus.png (PNG copy)> <./StatsBonusFoldMap.png (PNG copy)>]
+(./Report.aux)
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
@@ -500,20 +538,21 @@ Package logreq Info: Writing requests to 'Report.run.xml'.
 ### semi simple group (level 1) entered at line 13 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8560 strings out of 492623
- 150439 string characters out of 6135669
- 584863 words of memory out of 5000000
- 12404 multiletter control sequences out of 15000+600000
+ 8596 strings out of 492623
+ 151073 string characters out of 6135669
+ 585895 words of memory out of 5000000
+ 12434 multiletter control sequences out of 15000+600000
  4851 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,7n,32p,827b,1714s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,7n,32p,827b,1716s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (2 pages, 229308 bytes).
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on Report.pdf (5 pages, 736011 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

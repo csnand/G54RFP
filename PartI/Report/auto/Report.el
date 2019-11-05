@@ -20,7 +20,11 @@
     "graphicx")
    (LaTeX-add-labels
     "fig:taskI.1"
-    "fig:sheet")
+    "fig:sheet"
+    "fig:drop"
+    "fig:intervals"
+    "fig:taskI.5.1.2"
+    "fig:taskI.5.3")
    (LaTeX-add-bibliographies
     "../bibs/ref"))
  :latex)
