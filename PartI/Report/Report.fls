@@ -122,6 +122,9 @@ INPUT ./Stats.png
 INPUT StatsFoldMap.png
 INPUT ./StatsFoldMap.png
 INPUT ./StatsFoldMap.png
+INPUT StatsBonusBound.png
+INPUT ./StatsBonusBound.png
+INPUT ./StatsBonusBound.png
 INPUT StatsBonus.png
 INPUT ./StatsBonus.png
 INPUT ./StatsBonus.png

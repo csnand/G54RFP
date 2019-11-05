@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  5 NOV 2019 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  5 NOV 2019 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,33 +502,38 @@ File: StatsFoldMap.png Graphic file (type png)
 Package pdftex.def Info: StatsFoldMap.png  used on input line 185.
 (pdftex.def)             Requested size: 227.62204pt x 187.84633pt.
  [4 <./Stats.png (PNG copy)> <./StatsFoldMap.png (PNG copy)>]
-<StatsBonus.png, id=26, 554.82281pt x 409.53pt>
+<StatsBonusBound.png, id=26, 502.87875pt x 143.03438pt>
+File: StatsBonusBound.png Graphic file (type png)
+<use StatsBonusBound.png>
+Package pdftex.def Info: StatsBonusBound.png  used on input line 221.
+(pdftex.def)             Requested size: 201.14793pt x 57.21272pt.
+<StatsBonus.png, id=27, 553.31718pt x 502.87875pt>
 File: StatsBonus.png Graphic file (type png)
 <use StatsBonus.png>
-Package pdftex.def Info: StatsBonus.png  used on input line 224.
-(pdftex.def)             Requested size: 227.62204pt x 168.0146pt.
-<StatsBonusFoldMap.png, id=27, 520.19344pt x 593.21625pt>
+Package pdftex.def Info: StatsBonus.png  used on input line 233.
+(pdftex.def)             Requested size: 227.62204pt x 206.87221pt.
+<StatsBonusFoldMap.png, id=28, 527.72156pt x 460.72125pt>
 File: StatsBonusFoldMap.png Graphic file (type png)
 <use StatsBonusFoldMap.png>
-Package pdftex.def Info: StatsBonusFoldMap.png  used on input line 231.
-(pdftex.def)             Requested size: 227.62204pt x 259.57672pt.
+Package pdftex.def Info: StatsBonusFoldMap.png  used on input line 240.
+(pdftex.def)             Requested size: 227.62204pt x 198.71788pt.
 
 
-./Report.tex:245: LaTeX Error: \begin{normalsize} on input line 29 ended by \en
+./Report.tex:259: LaTeX Error: \begin{normalsize} on input line 29 ended by \en
 d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.245 \end{document}
+l.259 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[5 <./StatsBonus.png (PNG copy)> <./StatsBonusFoldMap.png (PNG copy)>]
-(./Report.aux)
+[5 <./StatsBonusBound.png (PNG copy)> <./StatsBonus.png (PNG copy)> <./StatsBon
+usFoldMap.png (PNG copy)>] (./Report.aux)
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
@@ -539,10 +544,10 @@ Package logreq Info: Writing requests to 'Report.run.xml'.
 ### semi simple group (level 1) entered at line 13 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8596 strings out of 492623
- 151073 string characters out of 6135669
- 585895 words of memory out of 5000000
- 12434 multiletter control sequences out of 15000+600000
+ 8602 strings out of 492623
+ 151200 string characters out of 6135669
+ 585903 words of memory out of 5000000
+ 12439 multiletter control sequences out of 15000+600000
  4851 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,7n,32p,827b,1716s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -550,10 +555,10 @@ Here is how much of TeX's memory you used:
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (5 pages, 737159 bytes).
+Output written on Report.pdf (5 pages, 764338 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

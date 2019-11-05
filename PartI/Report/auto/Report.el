@@ -24,6 +24,7 @@
     "fig:drop"
     "fig:intervals"
     "fig:taskI.5.1.2"
+    "fig:bounded"
     "fig:taskI.5.3")
    (LaTeX-add-bibliographies
     "../bibs/ref"))

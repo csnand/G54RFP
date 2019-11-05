@@ -216,7 +216,16 @@
   object to AccumStats and the results for all object in Drawing can be combined
   using foldMap.
 
+  \begin{figure}[H]
+    \centering
+    \centerline{\includegraphics[scale=0.4]{StatsBonusBound}}
+    \caption{newtype Bounded}
+    \label{fig:bounded}
+  \end{figure}
 
+  Figure \ref{fig:bounded} shows the implementation details of Bounded class for
+  Length and Area. They both bounded below by 0 and above by +Infinity.
+  
   \begin{figure}[H]
 
     \begin{minipage}[b]{0.48\linewidth}
@@ -238,7 +247,12 @@
     % 
   \end{figure}
 
-  
+  Figure \ref{fig:taskI.5.3} demostrates the two version of statistics function
+  implemetated according newtype Length and Area. They work exactly the same as
+  the version showed in figure \ref{fig:taskI.5.1.2} but there are some work
+  arounds according to the type definitions. For example, some values may
+  wrapped in Area then they need to be extracted out and do some computation and
+  put back to Area. The same processes works for values in Length, Sum and Max.
   
 
 
