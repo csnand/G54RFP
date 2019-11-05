@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber Report"] 1572885126 "Report.bcf" "Report.bbl" "Report" 1572987757
+["biber Report"] 1572885126 "Report.bcf" "Report.bbl" "Report" 1572989808
   "../bibs/ref.bib" 0 -1 0 ""
-  "Report.bcf" 1572987745 91024 14419807eed290ce7c1bf5a3a7df3072 "pdflatex"
+  "Report.bcf" 1572989800 91024 14419807eed290ce7c1bf5a3a7df3072 "pdflatex"
   (generated)
-  "Report.blg"
   "Report.bbl"
-["pdflatex"] 1572987744 "Report.tex" "Report.pdf" "Report" 1572987757
+  "Report.blg"
+["pdflatex"] 1572989808 "Report.tex" "Report.pdf" "Report" 1572989808
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1557554374 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1557554374 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1557554374 1288 655e228510b4c2a1abe905c368440826 ""
@@ -61,10 +61,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1568099650 7979416 905bd2c43555b4990644cacd2a400fe1 ""
   "Hamming.png" 1572885264 15460 3eeed9f05f59d59b454db53829dfd5fd ""
   "Intervals.png" 1572881785 99414 67acf48ed2664da1889058413dd5579a ""
-  "Report.aux" 1572987745 2524 99b90ebb1de6853277c3341fa4f2346b "pdflatex"
+  "Report.aux" 1572989800 2524 99b90ebb1de6853277c3341fa4f2346b "pdflatex"
   "Report.bbl" 1572885083 0 d41d8cd98f00b204e9800998ecf8427e "biber Report"
-  "Report.run.xml" 1572987745 2320 d5463b3306628a85e552a253e11f835e "pdflatex"
-  "Report.tex" 1572987743 10765 56a1aa0c4dbf493d4172764ebd4da47d ""
+  "Report.run.xml" 1572989800 2320 d5463b3306628a85e552a253e11f835e "pdflatex"
+  "Report.tex" 1572989807 10704 e650bb9171ff08f6ec65b9e8a6c6dae5 ""
   "SBRAL-Drop.png" 1572881456 37945 994c7634a69dd91c8aad7bedb5ae8d0b ""
   "Sheet.png" 1572886244 32955 52b6752255e8a5ea45ca61a0508d0a4c ""
   "Stats.png" 1572983069 74212 b3ef31160b46a90afd5f3efe2a35702f ""
@@ -77,5 +77,5 @@
   "Report.pdf"
   "Report.log"
   "Report.bcf"
-  "Report.run.xml"
   "Report.aux"
+  "Report.run.xml"

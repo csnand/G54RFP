@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  5 NOV 2019 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  5 NOV 2019 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -469,7 +469,7 @@ Package pdftex.def Info: cyclic.jpg  used on input line 43.
 <Sheet.png, id=3, 470.50781pt x 284.56313pt>
 File: Sheet.png Graphic file (type png)
 <use Sheet.png>
-Package pdftex.def Info: Sheet.png  used on input line 64.
+Package pdftex.def Info: Sheet.png  used on input line 61.
 (pdftex.def)             Requested size: 282.30685pt x 170.73918pt.
  [1
 
@@ -478,55 +478,55 @@ Package pdftex.def Info: Sheet.png  used on input line 64.
 <SBRAL-Drop.png, id=12, 406.51875pt x 368.87813pt>
 File: SBRAL-Drop.png Graphic file (type png)
 <use SBRAL-Drop.png>
-Package pdftex.def Info: SBRAL-Drop.png  used on input line 102.
+Package pdftex.def Info: SBRAL-Drop.png  used on input line 88.
 (pdftex.def)             Requested size: 243.91312pt x 221.32857pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 127.
+(Font)              <7> on input line 99.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 127.
+(Font)              <5> on input line 99.
  [2 <./SBRAL-Drop.png (PNG copy)>]
 <Intervals.png, id=16, 719.68875pt x 813.0375pt>
 File: Intervals.png Graphic file (type png)
 <use Intervals.png>
-Package pdftex.def Info: Intervals.png  used on input line 143.
+Package pdftex.def Info: Intervals.png  used on input line 109.
 (pdftex.def)             Requested size: 287.87039pt x 325.20924pt.
  [3 <./Intervals.png (PNG copy)>]
 <Stats.png, id=21, 532.23843pt x 395.97937pt>
 File: Stats.png Graphic file (type png)
 <use Stats.png>
-Package pdftex.def Info: Stats.png  used on input line 178.
+Package pdftex.def Info: Stats.png  used on input line 135.
 (pdftex.def)             Requested size: 227.62204pt x 169.34335pt.
 <StatsFoldMap.png, id=22, 542.77782pt x 447.92343pt>
 File: StatsFoldMap.png Graphic file (type png)
 <use StatsFoldMap.png>
-Package pdftex.def Info: StatsFoldMap.png  used on input line 185.
+Package pdftex.def Info: StatsFoldMap.png  used on input line 142.
 (pdftex.def)             Requested size: 227.62204pt x 187.84633pt.
  [4 <./Stats.png (PNG copy)> <./StatsFoldMap.png (PNG copy)>]
 <StatsBonusBound.png, id=26, 502.87875pt x 143.03438pt>
 File: StatsBonusBound.png Graphic file (type png)
 <use StatsBonusBound.png>
-Package pdftex.def Info: StatsBonusBound.png  used on input line 221.
+Package pdftex.def Info: StatsBonusBound.png  used on input line 170.
 (pdftex.def)             Requested size: 201.14793pt x 57.21272pt.
 <StatsBonus.png, id=27, 553.31718pt x 502.87875pt>
 File: StatsBonus.png Graphic file (type png)
 <use StatsBonus.png>
-Package pdftex.def Info: StatsBonus.png  used on input line 233.
+Package pdftex.def Info: StatsBonus.png  used on input line 182.
 (pdftex.def)             Requested size: 227.62204pt x 206.87221pt.
 <StatsBonusFoldMap.png, id=28, 527.72156pt x 460.72125pt>
 File: StatsBonusFoldMap.png Graphic file (type png)
 <use StatsBonusFoldMap.png>
-Package pdftex.def Info: StatsBonusFoldMap.png  used on input line 240.
+Package pdftex.def Info: StatsBonusFoldMap.png  used on input line 189.
 (pdftex.def)             Requested size: 227.62204pt x 198.71788pt.
 
 
-./Report.tex:259: LaTeX Error: \begin{normalsize} on input line 29 ended by \en
+./Report.tex:207: LaTeX Error: \begin{normalsize} on input line 29 ended by \en
 d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.259 \end{document}
+l.207 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -555,7 +555,7 @@ Here is how much of TeX's memory you used:
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (5 pages, 764338 bytes).
+Output written on Report.pdf (5 pages, 764283 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
