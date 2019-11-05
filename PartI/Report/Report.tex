@@ -193,7 +193,28 @@
   \end{figure}
 
   Figure \ref{fig:taskI.5.1.2} shows how the statistics functions were
-  implemetated using two different approach.
+  implemetated using two different approach. Figure \ref{fig:taskI.5.1.2} (a)
+  illustrates how the statistics function was defined using recursion. The
+  statistics function takes a Drawing Object as input and return Statistics as
+  result by calling the accumStats function to do the computation. The
+  accumStats was implemetated using recursion by taking the result of last
+  computation and the remaining Drawing Object  as input and eventually return
+  the final result. The area and circum functions were defined to aid the
+  computation. They calculated th area and circumference of a single object
+  seperately.
+
+  Figure \ref{fig:taskI.5.1.2} (b) shows a different approach of defining the
+  statistics function by making Drawing an instance of Foldable and making
+  AccumStats an instance of Semigroup. By making Drawing an instance of
+  Foldable, a function can be applied to every object in drawing and the results
+  can be combined. By making AccumStats an instance of Semigroup, it provided a
+  way of merging two AccumStats to form a new AccumStats.
+
+  As for the statistics using foldMap, the overall structure is similar to the
+  recursive version, but the accumStats was defined differently. Instead
+  processing all objects in Drawing, the accumStats now only need to convert one
+  object to AccumStats and the results for all object in Drawing can be combined
+  using foldMap.
 
 
   \begin{figure}[H]
@@ -217,6 +238,7 @@
     % 
   \end{figure}
 
+  
   
 
 

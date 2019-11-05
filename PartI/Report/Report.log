@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  5 NOV 2019 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.10)  5 NOV 2019 20:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -501,26 +501,27 @@ File: StatsFoldMap.png Graphic file (type png)
 <use StatsFoldMap.png>
 Package pdftex.def Info: StatsFoldMap.png  used on input line 185.
 (pdftex.def)             Requested size: 227.62204pt x 187.84633pt.
-<StatsBonus.png, id=23, 554.82281pt x 409.53pt>
+ [4 <./Stats.png (PNG copy)> <./StatsFoldMap.png (PNG copy)>]
+<StatsBonus.png, id=26, 554.82281pt x 409.53pt>
 File: StatsBonus.png Graphic file (type png)
 <use StatsBonus.png>
-Package pdftex.def Info: StatsBonus.png  used on input line 203.
+Package pdftex.def Info: StatsBonus.png  used on input line 224.
 (pdftex.def)             Requested size: 227.62204pt x 168.0146pt.
-<StatsBonusFoldMap.png, id=24, 520.19344pt x 593.21625pt>
+<StatsBonusFoldMap.png, id=27, 520.19344pt x 593.21625pt>
 File: StatsBonusFoldMap.png Graphic file (type png)
 <use StatsBonusFoldMap.png>
-Package pdftex.def Info: StatsBonusFoldMap.png  used on input line 210.
+Package pdftex.def Info: StatsBonusFoldMap.png  used on input line 231.
 (pdftex.def)             Requested size: 227.62204pt x 259.57672pt.
- [4 <./Stats.png (PNG copy)> <./StatsFoldMap.png (PNG copy)>]
 
-./Report.tex:223: LaTeX Error: \begin{normalsize} on input line 29 ended by \en
+
+./Report.tex:245: LaTeX Error: \begin{normalsize} on input line 29 ended by \en
 d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 \end{document}
+l.245 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -549,7 +550,7 @@ Here is how much of TeX's memory you used:
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (5 pages, 736011 bytes).
+Output written on Report.pdf (5 pages, 737159 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

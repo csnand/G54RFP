@@ -9,6 +9,14 @@ type Position = (Double, Double)
 newtype Length = Length { getLength :: Double } deriving (Eq, Ord, Num, Show)
 newtype Area   = Area   { getArea   :: Double } deriving (Eq, Ord, Num, Show)
 
+instance Bounded Length where
+  minBound = 0
+  maxBound = Length $ read "Infinity"
+
+instance Bounded Area where
+  minBound = 0
+  maxBound = Area $ read "Infinity"
+
 
 data Object =
    Rectangle {
@@ -38,14 +46,6 @@ data AccumStats =
     asMaxArea :: Max Area,
     asMaxCircumference :: Max Length
   } deriving Show
-
-area :: Object -> Area
-area (Rectangle{ .. }) = Area (getLength width * getLength height)
-area (Circle{ .. })    = Area (pi * getLength radius * getLength radius)
-
-circum :: Object -> Length
-circum (Rectangle { .. }) = Length ( (getLength width + getLength height) * 2 )
-circum (Circle { .. })    = Length ( pi * getLength radius * 2 )
 
 
 instance Foldable Drawing where
@@ -118,4 +118,11 @@ accumStats accum (Element object) =
 accumStats accum (Group [])     = accum
 accumStats accum (Group (x:xs)) = accumStats (accumStats accum x) (Group xs)
 
+area :: Object -> Area
+area (Rectangle{ .. }) = Area (getLength width * getLength height)
+area (Circle{ .. })    = Area (pi * getLength radius * getLength radius)
+
+circum :: Object -> Length
+circum (Rectangle { .. }) = Length ( (getLength width + getLength height) * 2 )
+circum (Circle { .. })    = Length ( pi * getLength radius * 2 )
 
