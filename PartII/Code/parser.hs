@@ -121,7 +121,7 @@ symbol str = token (string str)
 -- the parser can be translated as follow
 
 expr :: Parser Int
-expr = plus <|> minus <|> term 
+expr = plus <|> minus <|> term
 
 plus :: Parser Int
 plus = do t <- term
@@ -168,8 +168,5 @@ eval str = case parse expr str of
              [(a,[])]    -> a
              [(_, rest)] -> error ("Ununsed Input: " ++ rest)
              []          -> error ("Invalid Input")
-
-
-
 
 
