@@ -114,8 +114,8 @@ symbol str = token (string str)
 
 -- expr ::= term + expr | term - expr | term
 -- term ::= factor * term | factor / term | factor
--- factor ::= ( expr ) | nat
--- nat ::= 0 | 1 | 2 ...
+-- factor ::= ( expr ) | int
+-- int ::= ... -1 | 0 | 1 | 2 ...
 
 -- based on the CFG above
 -- the parser can be translated as follow
