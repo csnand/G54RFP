@@ -3,32 +3,36 @@ import Control.Concurrent
 import Control.Concurrent.STM
 import System.Random
 
-type Fork = TVar Int
+type Fork = TMVar Int
+
+data Fork = MkFork (TMVar Int)
+
+
 
 newFork :: Int -> IO Fork
-newFork i = newTVarIO i
+newFork i = newTMVarIO i
 
 takeFork :: Fork -> STM Int
-takeFork fork = readTVar fork
+takeFork fork = takeTMVar fork
 
 releaseFork :: Int -> Fork -> STM ()
-releaseFork i fork = writeTVar fork i
+releaseFork i fork = putTMVar fork i
 
 runPhilosopher :: String -> (Fork, Fork) -> IO ()
-runPhilosopher name (left, right) = do
+runPhilosopher name (left, right) = forever $ do
   putStrLn (name ++ " is hungry.")
   (leftNum, rightNum) <- atomically $ do
     leftNum <- takeFork left
     rightNum <- takeFork right
     return (leftNum, rightNum)
-  putStrLn $ name ++ " got forks " ++ show leftNum ++ " and " ++ show rightNum ++ " and is now eating"
-  delay <- randomRIO (2,10)
+  putStrLn $ name ++ " got forks" ++ show leftNum ++ " and " ++ show rightNum ++ " and is now eating"
+  delay <- randomRIO (1,10)
   threadDelay (delay * 1000000)
   putStrLn (name ++ " is done eating. Going back to thinking.")
   atomically $ do
     releaseFork leftNum left
     releaseFork rightNum right
-  delay <- randomRIO (2, 10)
+  delay <- randomRIO (1, 10)
   threadDelay (delay * 1000000)
 
 

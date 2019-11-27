@@ -3,37 +3,57 @@ import Control.Concurrent
 import Control.Concurrent.STM
 import System.Random
 
-type Fork = TMVar Int
+data Fork = MkFork (TMVar Int)
 
 newFork :: Int -> IO Fork
-newFork i = newTMVarIO i
+newFork i = do
+  fork <- newTMVarIO i
+  return (MkFork fork)
 
 takeFork :: Fork -> STM Int
-takeFork fork = takeTMVar fork
+takeFork (MkFork fork) = takeTMVar fork
 
-releaseFork :: Int -> Fork -> STM ()
-releaseFork i fork = putTMVar fork i
+putFork :: Int -> Fork -> STM ()
+putFork i (MkFork fork) = putTMVar fork i
 
-runPhilosopher :: String -> (Fork, Fork) -> IO ()
-runPhilosopher name (left, right) = forever $ do
-  putStrLn (name ++ " is hungry.")
-  (leftNum, rightNum) <- atomically $ do
-    leftNum <- takeFork left
-    rightNum <- takeFork right
-    return (leftNum, rightNum)
-  putStrLn $ name ++ " got forks" ++ show leftNum ++ " and " ++ show rightNum ++ " and is now eating"
-  delay <- randomRIO (1,10)
-  threadDelay (delay * 1000000)
-  putStrLn (name ++ " is done eating. Going back to thinking.")
-  atomically $ do
-    releaseFork leftNum left
-    releaseFork rightNum right
-  delay <- randomRIO (1, 10)
-  threadDelay (delay * 1000000)
+hungry :: String -> IO ()
+hungry name = putStrLn $ name ++ " is hungry."
 
+eating :: String -> Int -> Int -> IO ()
+eating name fork1 fork2 = putStrLn $ name ++
+  " with forks " ++ show fork1 ++
+  " and " ++ show fork2 ++
+  " is eating."
+
+thinking :: String -> IO ()
+thinking name =   putStrLn $ name ++ " is thinking."
 
 philosophers :: [String]
 philosophers = ["Aristotle", "Kant", "Spinoza", "Marx", "Russel"]
+
+
+randomDelay :: IO ()
+randomDelay = do
+  waitTime <- randomRIO (5,20)
+  threadDelay (waitTime * 1000000)
+
+
+runPhilosopher :: String -> (Fork, Fork) -> IO ()
+runPhilosopher name (left, right) = forever $ do
+  hungry name
+  (leftFork, rightFork) <- atomically $ do
+    leftFork <- takeFork left
+    rightFork <- takeFork right
+    return (leftFork, rightFork)
+  eating name leftFork rightFork
+  randomDelay
+
+  atomically $ do
+    putFork leftFork left
+    putFork rightFork right
+  thinking name
+  randomDelay
+
 
 main = do
   forks <- mapM newFork [1..5]
@@ -43,5 +63,4 @@ main = do
   putStrLn "Running the philosophers. Press enter to quit."
   mapM_ forkIO philosophersWithForks
 
-  -- All threads exit when the main thread exits.
   getLine
