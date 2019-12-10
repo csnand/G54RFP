@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.20)  10 DEC 2019 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.20)  10 DEC 2019 23:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -348,7 +348,11 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 \@quotelevel=\count281
 \@quotereset=\count282
 
-(./Report.aux)
+(./Report.aux
+
+LaTeX Warning: Label `fig:dinning' multiply defined.
+
+)
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -457,7 +461,7 @@ Package pdftex.def Info: ./images/dinning2.png  used on input line 41.
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./images/di
 nning1.png> <./images/dinning2.png>]
-Overfull \hbox (0.57397pt too wide) in paragraph at lines 78--88
+Overfull \hbox (0.57397pt too wide) in paragraph at lines 79--89
 []\OT1/cmr/m/n/10 The din-ning func-tion is con-tains the im-ple-men-ta-tion of
  din-ning philoso-phers. This func-tion takes a TChan String(used
  []
@@ -465,32 +469,74 @@ Overfull \hbox (0.57397pt too wide) in paragraph at lines 78--88
 <./images/dinning10s.png, id=14, 394.47375pt x 788.9475pt>
 File: ./images/dinning10s.png Graphic file (type png)
 <use ./images/dinning10s.png>
-Package pdftex.def Info: ./images/dinning10s.png  used on input line 102.
+Package pdftex.def Info: ./images/dinning10s.png  used on input line 103.
 (pdftex.def)             Requested size: 113.81102pt x 227.62119pt.
 <./images/dinngin1m.png, id=15, 348.30125pt x 784.9325pt>
 File: ./images/dinngin1m.png Graphic file (type png)
 <use ./images/dinngin1m.png>
-Package pdftex.def Info: ./images/dinngin1m.png  used on input line 108.
+Package pdftex.def Info: ./images/dinngin1m.png  used on input line 109.
 (pdftex.def)             Requested size: 113.81102pt x 256.4774pt.
 <./images/dinning2m.png, id=16, 316.18124pt x 795.97375pt>
 File: ./images/dinning2m.png Graphic file (type png)
 <use ./images/dinning2m.png>
-Package pdftex.def Info: ./images/dinning2m.png  used on input line 114.
+Package pdftex.def Info: ./images/dinning2m.png  used on input line 115.
 (pdftex.def)             Requested size: 113.81102pt x 286.5139pt.
 <./images/dinning4m.png, id=17, 359.3425pt x 787.94376pt>
 File: ./images/dinning4m.png Graphic file (type png)
 <use ./images/dinning4m.png>
-Package pdftex.def Info: ./images/dinning4m.png  used on input line 120.
+Package pdftex.def Info: ./images/dinning4m.png  used on input line 121.
 (pdftex.def)             Requested size: 113.81102pt x 249.55017pt.
-[2]
+[2] [3 <./images/dinning10s.png> <./images/dinngin1m.png> <./images/dinning2m.p
+ng> <./images/dinning4m.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 165.
 
-./Report.tex:145: LaTeX Error: File `StatsBonusBound' not found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
+<./images/calcmain.png, id=28, 392.46625pt x 106.3975pt>
+File: ./images/calcmain.png Graphic file (type png)
+<use ./images/calcmain.png>
+Package pdftex.def Info: ./images/calcmain.png  used on input line 180.
+(pdftex.def)             Requested size: 156.9837pt x 42.55824pt.
+<./images/calcsetup1.png, id=29, 579.16376pt x 600.2425pt>
+File: ./images/calcsetup1.png Graphic file (type png)
+<use ./images/calcsetup1.png>
+Package pdftex.def Info: ./images/calcsetup1.png  used on input line 194.
+(pdftex.def)             Requested size: 241.84842pt x 250.65302pt.
+<./images/calcsetup2.png, id=30, 801.99625pt x 431.6125pt>
+File: ./images/calcsetup2.png Graphic file (type png)
+<use ./images/calcsetup2.png>
+Package pdftex.def Info: ./images/calcsetup2.png  used on input line 200.
+(pdftex.def)             Requested size: 241.84894pt x 156.4868pt.
+ [4 <./images/calcmain.png>]
+./Report.tex:208: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.208   css \footnote[]
+                       {https://github.com/xxczaki/calculator.js/blob/5d8ec0...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 208.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 208.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 208.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 208.
+
+./Report.tex:212: LaTeX Error: File `StatsBonusBound' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145 ...ludegraphics[scale=0.4]{StatsBonusBound}}
+l.212 ...ludegraphics[scale=0.4]{StatsBonusBound}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -498,13 +544,13 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:155: LaTeX Error: File `StatsBonus' not found.
+./Report.tex:222: LaTeX Error: File `StatsBonus' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 ...includegraphics[width=8.0cm]{StatsBonus}}
+l.222 ...includegraphics[width=8.0cm]{StatsBonus}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -512,13 +558,13 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:162: LaTeX Error: File `StatsBonusFoldMap' not found.
+./Report.tex:229: LaTeX Error: File `StatsBonusFoldMap' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162 ...graphics[width=8.0cm]{StatsBonusFoldMap}}
+l.229 ...graphics[width=8.0cm]{StatsBonusFoldMap}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -526,21 +572,23 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:173: LaTeX Error: \begin{normalsize} on input line 28 ended by \en
+./Report.tex:240: LaTeX Error: \begin{normalsize} on input line 28 ended by \en
 d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 \end{document}
+l.240 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3 <./images/dinning10s.png> <./images/dinngin1m.png> <./images/dinning2m.png> 
-<./images/dinning4m.png>] (./Report.aux)
+[5 <./images/calcsetup1.png> <./images/calcsetup2.png>] (./Report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
@@ -551,20 +599,24 @@ Package logreq Info: Writing requests to 'Report.run.xml'.
 ### semi simple group (level 1) entered at line 12 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8502 strings out of 492671
- 150721 string characters out of 6134269
- 584787 words of memory out of 5000000
- 12327 multiletter control sequences out of 15000+600000
- 4851 words of font info for 18 fonts, out of 8000000 for 9000
+ 8551 strings out of 492671
+ 151558 string characters out of 6134269
+ 584834 words of memory out of 5000000
+ 12364 multiletter control sequences out of 15000+600000
+ 6674 words of font info for 24 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 35i,7n,32p,827b,1717s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,8n,32p,827b,1721s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (3 pages, 241254 bytes).
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Report.pdf (5 pages, 385921 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
