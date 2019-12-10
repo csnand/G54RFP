@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.20)  10 DEC 2019 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.20)  10 DEC 2019 22:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -484,13 +484,13 @@ Package pdftex.def Info: ./images/dinning4m.png  used on input line 120.
 (pdftex.def)             Requested size: 113.81102pt x 249.55017pt.
 [2]
 
-./Report.tex:140: LaTeX Error: File `StatsBonusBound' not found.
+./Report.tex:145: LaTeX Error: File `StatsBonusBound' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 ...ludegraphics[scale=0.4]{StatsBonusBound}}
+l.145 ...ludegraphics[scale=0.4]{StatsBonusBound}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -498,13 +498,13 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:150: LaTeX Error: File `StatsBonus' not found.
+./Report.tex:155: LaTeX Error: File `StatsBonus' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150 ...includegraphics[width=8.0cm]{StatsBonus}}
+l.155 ...includegraphics[width=8.0cm]{StatsBonus}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -512,13 +512,13 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:157: LaTeX Error: File `StatsBonusFoldMap' not found.
+./Report.tex:162: LaTeX Error: File `StatsBonusFoldMap' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 ...graphics[width=8.0cm]{StatsBonusFoldMap}}
+l.162 ...graphics[width=8.0cm]{StatsBonusFoldMap}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -526,14 +526,14 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:168: LaTeX Error: \begin{normalsize} on input line 28 ended by \en
+./Report.tex:173: LaTeX Error: \begin{normalsize} on input line 28 ended by \en
 d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.168 \end{document}
+l.173 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -561,7 +561,7 @@ Here is how much of TeX's memory you used:
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (3 pages, 240563 bytes).
+Output written on Report.pdf (3 pages, 241254 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream

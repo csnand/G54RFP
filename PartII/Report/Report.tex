@@ -127,9 +127,14 @@
 
   Figure \ref{fig:drunning} contains four figures that shows this implementation
   running non-stop for four minutes. These sample output of the running program
-  suggests that this implementation is working and without deadlocks.
-
-  
+  suggests that this implementation is working and without deadlocks. The main
+  reason that this implementation is free of deadlocks is that it doesnot use
+  locks at all and also this implementation uses STM which allows the threads
+  running without the knowledge of the global environment. Giving two forks,
+  each thread simple keep trying to aquired them at the same time until success.
+  In this way, deadlocks can be avoid as resources will be aquired only until
+  they are available. In contrast, if a thread aquired partially available and
+  wait until other resource is available then deadlocks may easily occur.
 
 
 
