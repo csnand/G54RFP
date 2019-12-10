@@ -95,7 +95,42 @@
   function by mapping forkIO function to the runnable dinning functions while
   the printBuf function is called to print the logs of those running thread.
 
+   \begin{figure}[H]
+
+    \begin{minipage}[b]{0.24\linewidth}
+      \centering
+      \centerline{\includegraphics[width=4.0cm]{dinning10s}}
+      \centerline{ (a) running at 10s}\medskip
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.24\linewidth}
+      \centering
+      \centerline{\includegraphics[width=4.0cm]{dinngin1m}}
+      \centerline{ (b) running at 1m}\medskip
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.24\linewidth}
+      \centering
+      \centerline{\includegraphics[width=4.0cm]{dinning2m}}
+      \centerline{ (c) running at 2m}\medskip
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.24\linewidth}
+      \centering
+      \centerline{\includegraphics[width=4.0cm]{dinning4m}}
+      \centerline{ (b) running at 4m}\medskip
+    \end{minipage}
+
+    \caption{Dinning Philosopher Running at Defferent Point of Time}
+    \label{fig:drunning}
+  \end{figure}
+
+  Figure \ref{fig:drunning} contains four figures that shows this implementation
+  running non-stop for four minutes. These sample output of the running program
+  suggests that this implementation is working and without deadlocks.
+
   
+
 
 
   \section{Task II.2}

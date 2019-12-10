@@ -2,8 +2,6 @@ module Main where
 import qualified Graphics.UI.Threepenny       as UI
 import           Graphics.UI.Threepenny.Core
 import qualified Parser                       as P
-import Data.IORef
-
 
 main :: IO ()
 main = do
@@ -64,9 +62,7 @@ setup window = do
 
 
     displayBox <- UI.div #. "row displayBox" #+(
-      [UI.label #. "prevAns" # set UI.id_ "prevAns"] ++ [UI.br] ++
-      [UI.label #. "displayText" # set UI.id_ "display" #
-       sink UI.text calc])
+      [UI.label #. "displayText" # set UI.id_ "display" # sink UI.text calc])
 
 
     calcDiv <- UI.div #. "col-md-4 col-md-offset-4 calculator" #

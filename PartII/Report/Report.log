@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.20)  10 DEC 2019 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.20)  10 DEC 2019 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,14 +462,35 @@ Overfull \hbox (0.57397pt too wide) in paragraph at lines 78--88
  din-ning philoso-phers. This func-tion takes a TChan String(used
  []
 
+<./images/dinning10s.png, id=14, 394.47375pt x 788.9475pt>
+File: ./images/dinning10s.png Graphic file (type png)
+<use ./images/dinning10s.png>
+Package pdftex.def Info: ./images/dinning10s.png  used on input line 102.
+(pdftex.def)             Requested size: 113.81102pt x 227.62119pt.
+<./images/dinngin1m.png, id=15, 348.30125pt x 784.9325pt>
+File: ./images/dinngin1m.png Graphic file (type png)
+<use ./images/dinngin1m.png>
+Package pdftex.def Info: ./images/dinngin1m.png  used on input line 108.
+(pdftex.def)             Requested size: 113.81102pt x 256.4774pt.
+<./images/dinning2m.png, id=16, 316.18124pt x 795.97375pt>
+File: ./images/dinning2m.png Graphic file (type png)
+<use ./images/dinning2m.png>
+Package pdftex.def Info: ./images/dinning2m.png  used on input line 114.
+(pdftex.def)             Requested size: 113.81102pt x 286.5139pt.
+<./images/dinning4m.png, id=17, 359.3425pt x 787.94376pt>
+File: ./images/dinning4m.png Graphic file (type png)
+<use ./images/dinning4m.png>
+Package pdftex.def Info: ./images/dinning4m.png  used on input line 120.
+(pdftex.def)             Requested size: 113.81102pt x 249.55017pt.
+[2]
 
-./Report.tex:105: LaTeX Error: File `StatsBonusBound' not found.
+./Report.tex:140: LaTeX Error: File `StatsBonusBound' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 ...ludegraphics[scale=0.4]{StatsBonusBound}}
+l.140 ...ludegraphics[scale=0.4]{StatsBonusBound}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -477,13 +498,13 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:115: LaTeX Error: File `StatsBonus' not found.
+./Report.tex:150: LaTeX Error: File `StatsBonus' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 ...includegraphics[width=8.0cm]{StatsBonus}}
+l.150 ...includegraphics[width=8.0cm]{StatsBonus}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -491,13 +512,13 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:122: LaTeX Error: File `StatsBonusFoldMap' not found.
+./Report.tex:157: LaTeX Error: File `StatsBonusFoldMap' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.122 ...graphics[width=8.0cm]{StatsBonusFoldMap}}
+l.157 ...graphics[width=8.0cm]{StatsBonusFoldMap}}
                                                   
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -505,20 +526,21 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Report.tex:133: LaTeX Error: \begin{normalsize} on input line 28 ended by \en
+./Report.tex:168: LaTeX Error: \begin{normalsize} on input line 28 ended by \en
 d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \end{document}
+l.168 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2] (./Report.aux)
+[3 <./images/dinning10s.png> <./images/dinngin1m.png> <./images/dinning2m.png> 
+<./images/dinning4m.png>] (./Report.aux)
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
@@ -529,20 +551,20 @@ Package logreq Info: Writing requests to 'Report.run.xml'.
 ### semi simple group (level 1) entered at line 12 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8481 strings out of 492671
- 150222 string characters out of 6134269
- 583779 words of memory out of 5000000
- 12310 multiletter control sequences out of 15000+600000
+ 8502 strings out of 492671
+ 150721 string characters out of 6134269
+ 584787 words of memory out of 5000000
+ 12327 multiletter control sequences out of 15000+600000
  4851 words of font info for 18 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  35i,7n,32p,827b,1717s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (2 pages, 133697 bytes).
+Output written on Report.pdf (3 pages, 240563 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
