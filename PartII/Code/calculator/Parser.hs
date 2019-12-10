@@ -1,3 +1,4 @@
+module Parser (eval) where
 import Data.Char
 import Control.Applicative
 
@@ -163,10 +164,10 @@ factor = do symbol "("
 
 
 -- eval function is to handle invalid expr
-eval :: String -> Int
+eval :: String -> String
 eval str = case parse expr str of
-             [(a,[])]    -> a
-             [(_, rest)] -> error ("Ununsed Input: " ++ rest)
-             []          -> error ("Invalid Input")
+             [(a,[])]    -> show a
+             [(_, rest)] -> "Ununsed Input: " ++ rest
+             []          -> "Invalid Input"
 
 

@@ -1,6 +1,7 @@
 module Main where
 import qualified Graphics.UI.Threepenny       as UI
 import           Graphics.UI.Threepenny.Core
+import qualified Parser                       as P
 import Data.IORef
 
 -- Simple type to allow the calculator to store the state
@@ -134,29 +135,31 @@ displayBox = UI.div #. "row displayBox" #+
 
 numberPad :: UI Element
 numberPad = UI.div #. "row numberPad" #+
- ([UI.div #. "col-md-9" #+ ([row2] ++ [row3] ++ [row4] ++ [row5])] ++
+ ([UI.div #. "col-md-9" #+ ([row1] ++ [row2] ++ [row3] ++ [row4] ++ [row5])] ++
   [opRow])
 
 row1 :: UI Element
-row1 = undefined
+row1 = UI.div #. "row" #+
+  ([mkNumButton "clear" "C"] ++
+   [mkNumButton "ce" "CE"] ++
+   [mkNumButton "Lpar" "("] ++
+   [mkNumButton "Rpar" ")"])
+
 
 row2 :: UI Element
 row2 = UI.div #. "row" #+
-  ([mkNumButton "seven" "7"] ++
-   [mkNumButton "eight" "8"] ++
-   [mkNumButton "nine" "9"])
+  (map mkNumButton' (convert [7..9]))
 
 row3 :: UI Element
 row3 = UI.div #. "row" #+
-  ([mkNumButton "four" "4"] ++
-   [mkNumButton "five" "5"] ++
-   [mkNumButton "six" "6"])
+  (map mkNumButton' (convert [4..6]))
+
 
 row4 :: UI Element
 row4 = UI.div #. "row" #+
-  ([mkNumButton "one" "1"] ++
-   [mkNumButton "two" "2"] ++
-   [mkNumButton "three" "3"])
+  (map mkNumButton' (convert [1..3]))
+
+
 
 row5 :: UI Element
 row5 = UI.div #. "row" #+
@@ -177,6 +180,12 @@ mkNumButton :: String -> String -> UI Element
 mkNumButton id str = UI.button #. "btn btn-calc hvr-radial-out" #
   set UI.id_ id # set UI.text str
 
+mkNumButton' :: String -> UI Element
+mkNumButton' str = UI.button #. "btn btn-calc hvr-radial-out" #
+  set UI.id_ str # set UI.text str
+
+convert :: [Int] -> [String]
+convert = (>>= return.show)
 
 
     -- -- Create all the buttons from strings
