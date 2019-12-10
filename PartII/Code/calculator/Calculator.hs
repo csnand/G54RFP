@@ -36,14 +36,15 @@ setup window = do
     let eventParens = zipWith digitAction parens ["(", ")"]
     let eventZeroDot = zipWith digitAction butZeroDot ["0", "."]
     let eventOps = zipWith digitAction butOps ["/", "*", "-", "+"]
-    -- todo -> CSign Equal
     let eventClear = clearLastEntry clearEntry
     let eventReset = resetAction reset
     let eventEqual = equalAction butEqual
+    let eventCSign = changeSign butCSign
 
     let allEvents = event123 ++ event456 ++ event789 ++
                      eventParens ++ eventZeroDot ++ eventOps ++
-                    [eventReset] ++ [eventClear] ++ [eventEqual]
+                    [eventReset] ++ [eventClear] ++
+                    [eventEqual] ++ [eventCSign]
 
     calc <- accumB "" $ foldl1 (unionWith const) allEvents
 
@@ -73,8 +74,6 @@ setup window = do
                (map element [displayBox, numberPad])
 
     getBody window #+ [UI.div #. "container" #+ [element calcDiv] ]
-
-
     return ()
 
 digitAction :: Element -> String -> Event (String -> String)
@@ -83,8 +82,10 @@ digitAction button str = (\s -> addChar s str) <$ UI.click button
 addChar :: String -> String -> String
 addChar s1 s2 = s1 ++ s2
 
-changeSign :: String -> String
-changeSign = undefined -- parse first then times (-1)
+changeSign ::Element -> Event (String -> String)
+changeSign button = (\s -> show (csign s)) <$ UI.click button
+  where
+    csign str = (-1) * read (P.eval str):: Double
 
 clearLastEntry :: Element -> Event (String -> String)
 clearLastEntry button = init <$ UI.click button
