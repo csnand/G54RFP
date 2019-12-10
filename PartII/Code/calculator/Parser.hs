@@ -63,7 +63,6 @@ sat p = do x <- item
 digit :: Parser Char
 digit = sat isDigit
 
-
 -- parser for special chars
 char :: Char -> Parser Char
 char c = sat (== c)
@@ -88,26 +87,39 @@ token p = do space
              return n
 
 -- parser that ignore spaces around natural numbers
-natural :: Parser Int
+natural :: Parser Double
 natural = token nat
 
 --parser that ignore spaces around integers
-integer :: Parser Int
+integer :: Parser Double
 integer = token int
 
 -- parser for integers based on nat parser
-int :: Parser Int
-int = do char '-'
+int :: Parser Double
+int = nat <|>
+      do char '-'
          n <- nat
-         return (-n)
-      <|> nat
+         return ((-1) *  n)
 
 -- parser for natural numbers
-nat :: Parser Int
+nat :: Parser Double
 nat = do xs <- some digit
          return (read xs)
 
 
+
+double :: Parser Double
+double = do char '-'
+            d <- double'
+            return (-d)
+         <|> double' <|> integer
+
+
+double' :: Parser Double
+double' = do n <- some digit
+             char '.'
+             decimal <- some digit
+             return ( (read $ n ++ '.' : decimal) * (-1) )
 
 -- parser that ignore spaces around special symbols
 symbol :: String -> Parser String
@@ -115,52 +127,51 @@ symbol str = token (string str)
 
 -- expr ::= term + expr | term - expr | term
 -- term ::= factor * term | factor / term | factor
--- factor ::= ( expr ) | int
--- int ::= ... -1 | 0 | 1 | 2 ...
+-- factor ::= ( expr ) | double
+-- double ::= ... -1.0 | 0.0 | 1.0 | 2.0 ...
 
--- based on the CFG above
--- the parser can be translated as follow
-
-expr :: Parser Int
+expr :: Parser Double
 expr = plus <|> minus <|> term
 
-plus :: Parser Int
+plus :: Parser Double
 plus = do t <- term
           do symbol "+"
              e <- expr
              return (t + e)
 
 
-minus :: Parser Int
+minus :: Parser Double
 minus = do t <- term
            do symbol "-"
               e <- expr
               return (t - e)
 
 
-term :: Parser Int
+term :: Parser Double
 term = times <|> divide <|> factor
 
-times :: Parser Int
+times :: Parser Double
 times = do f <- factor
            do symbol "*"
               t <- term
               return (f * t)
 
 
-divide :: Parser Int
+divide :: Parser Double
 divide = do f <- factor
             do symbol "/"
                t <- term
-               return (f `div` t)
+               return (f / t)
 
 
-factor :: Parser Int
+factor :: Parser Double
 factor = do symbol "("
             e <- expr
             symbol ")"
             return e
-         <|> integer
+         <|> double
+
+
 
 
 -- eval function is to handle invalid expr
