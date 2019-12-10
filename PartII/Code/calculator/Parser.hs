@@ -107,19 +107,19 @@ nat = do xs <- some digit
          return (read xs)
 
 
-
 double :: Parser Double
-double = do char '-'
-            d <- double'
-            return (-d)
-         <|> double' <|> integer
+double = double'
+         <|> do char '-'
+                d <- double'
+                return (-d)
+         <|> integer
 
 
 double' :: Parser Double
 double' = do n <- some digit
              char '.'
              decimal <- some digit
-             return ( (read $ n ++ '.' : decimal) * (-1) )
+             return (read $ n ++ '.' : decimal)
 
 -- parser that ignore spaces around special symbols
 symbol :: String -> Parser String

@@ -8,8 +8,8 @@ import Data.IORef
 main :: IO ()
 main = do
     startGUI defaultConfig
-        { jsPort       = Just 8024
-        , jsStatic     = Just "./static"
+        { jsPort       = Just 8023
+        , jsStatic     = Just "static"
         } setup
 
 setup :: Window -> UI ()
