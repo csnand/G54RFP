@@ -21,8 +21,10 @@
     "fig:dinning"
     "fig:drunning"
     "fig:calcmain"
-    "fig:bounded"
-    "fig:taskI.5.3")
+    "fig:calcsetup"
+    "fig:calcfuncs"
+    "fig:parser"
+    "fig:parseDouble")
    (LaTeX-add-bibliographies
     "../bibs/ref"))
  :latex)
