@@ -21,7 +21,8 @@
     "fig:architecture"
     "fig:route"
     "fig:router"
-    "fig:controller")
+    "fig:controller"
+    "fig:react")
    (LaTeX-add-bibliographies
     "ref"))
  :latex)

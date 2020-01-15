@@ -113,6 +113,12 @@ INPUT ./images/router.png
 INPUT ./images/controller.png
 INPUT ./images/controller.png
 INPUT ./images/controller.png
+INPUT ./images/react1.png
+INPUT ./images/react1.png
+INPUT ./images/react1.png
+INPUT ./images/react2.png
+INPUT ./images/react2.png
+INPUT ./images/react2.png
 INPUT Report.aux
 INPUT Report.run.xml
 OUTPUT Report.run.xml
