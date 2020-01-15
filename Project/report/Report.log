@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.12.14)  15 JAN 2020 03:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.12.14)  15 JAN 2020 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -441,21 +441,79 @@ e
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+./Report.tex:101: Undefined control sequence.
+l.101     \centeringng
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./Report.tex:92: LaTeX Error: \begin{normalsize} on input line 28 ended by \end
-{document}.
+<./images/archi.png, id=9, 538.26094pt x 289.08pt>
+File: ./images/archi.png Graphic file (type png)
+<use ./images/archi.png>
+Package pdftex.def Info: ./images/archi.png  used on input line 102.
+(pdftex.def)             Requested size: 215.30055pt x 115.62994pt.
+./Report.tex:119: Undefined control sequence.
+l.119     \centeringng
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./images/route.png, id=10, 506.6428pt x 63.98906pt>
+File: ./images/route.png Graphic file (type png)
+<use ./images/route.png>
+Package pdftex.def Info: ./images/route.png  used on input line 120.
+(pdftex.def)             Requested size: 405.31479pt x 51.1913pt.
+[2 <./images/archi.png (PNG copy)>]
+./Report.tex:130: Undefined control sequence.
+l.130     \centeringng
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./images/router.png, id=14, 849.1725pt x 196.48407pt>
+File: ./images/router.png Graphic file (type png)
+<use ./images/router.png>
+Package pdftex.def Info: ./images/router.png  used on input line 131.
+(pdftex.def)             Requested size: 509.50743pt x 117.89134pt.
+./Report.tex:147: Undefined control sequence.
+l.147     \centeringng
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./images/controller.png, id=15, 659.46375pt x 493.845pt>
+File: ./images/controller.png Graphic file (type png)
+<use ./images/controller.png>
+Package pdftex.def Info: ./images/controller.png  used on input line 148.
+(pdftex.def)             Requested size: 461.62148pt x 345.68913pt.
+[3 <./images/route.png (PNG copy)> <./images/router.png (PNG copy)>]
+
+./Report.tex:169: LaTeX Error: \begin{normalsize} on input line 28 ended by \en
+d{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 \end{document}
-                   
+l.169 \end{document}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2] (./Report.aux)
+[4 <./images/controller.png (PNG copy)>] (./Report.aux)
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
@@ -466,20 +524,20 @@ Package logreq Info: Writing requests to 'Report.run.xml'.
 ### semi simple group (level 1) entered at line 12 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8802 strings out of 492164
- 158997 string characters out of 6127731
- 619002 words of memory out of 5000000
- 13111 multiletter control sequences out of 15000+600000
- 4851 words of font info for 18 fonts, out of 8000000 for 9000
+ 8840 strings out of 492164
+ 159635 string characters out of 6127731
+ 620034 words of memory out of 5000000
+ 13147 multiletter control sequences out of 15000+600000
+ 5456 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,4n,34p,819b,1559s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,6n,34p,819b,1626s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (2 pages, 46150 bytes).
+Output written on Report.pdf (4 pages, 229563 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

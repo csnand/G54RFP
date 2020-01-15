@@ -17,6 +17,11 @@
     "biblatex"
     "float"
     "graphicx")
+   (LaTeX-add-labels
+    "fig:architecture"
+    "fig:route"
+    "fig:router"
+    "fig:controller")
    (LaTeX-add-bibliographies
     "ref"))
  :latex)

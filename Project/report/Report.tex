@@ -75,17 +75,94 @@
   programming language compiles to java bytecode and supports both functional
   programming and imperative programming. Hence, by using scala, we can not only
   explore functional programming in depth but also leveraging the java
-  ecosystem.
+  ecosystem. The backend server provides service through REST apis, therefore,
+  the play framework is chosen to serve thid purpose. The play framework
+  supports MVC architecture by default, but this project is not designed that
+  way. The project does not include database and the frontend is implemented
+  separately. Hence, only controllers will be created.
 
   As for the frontend interface, a javascript library called React will be used.
   The reason for that choice is that, React supports functional reactive
   programming paradigm which can be used to create graphical user interface.
+  Functional reactive programming is progamming paradigm that been studied over
+  the years and there are a few attemps to apply functional reactive progamming
+  to graphical user interface designs. React is not purely functional by nature
+  as it relies on javascript as its underlying programming language. But the
+  design decisions made for this library are inspired by functional reactive
+  programming. Hence, React can be used to design graphical user interface using
+  functional reactive progamming.
   
-
   \section{Implementation}
   In this section, the general architecture of this project will be introduced
   as well as some essential implementation details.
 
+  \subsection{Architecture}
+  \begin{figure}[H]
+    \centeringng
+    \centerline{\includegraphics[scale=0.4]{archi}}
+    \caption{Architecture of this project}
+    \label{fig:architecture}
+  \end{figure}
+
+  Figure \ref{fig:architecture} shows the overall structure of this project.
+  This project mainly consists of two parts. The recipe house web interface and
+  backend server. The we interface provide an access to the end users. The name
+  of ingredients can be input through the web interface. The web interface will
+  requests the backend server accordingly for recipe data then those data will
+  be presented to the end user through the web interface. As for the backend
+  server, It provide services to the web interface through REST apis. Given the
+  input from the user, the backend server will query the edamame api for recipe
+  information. 
+
+  \subsection{Backend}
+  \begin{figure}[H]
+    \centeringng
+    \centerline{\includegraphics[scale=0.8]{route}}
+    \caption{Architecture of this project}
+    \label{fig:route}
+  \end{figure}
+  The backend server is implemented using play framework. Figure \ref{fig:route}
+  shows the contains of the route file. The arrow suggested that this route is
+  defined generically. Any route that matches the route defined above will be
+  handled by the RecipeRouter in routers package.
+
+  \begin{figure}[H]
+    \centeringng
+    \centerline{\includegraphics[scale=0.6]{router}}
+    \caption{Architecture of this project}
+    \label{fig:router}
+  \end{figure}
+  Figure \ref{fig:router} depicted the implementation of the router. The route
+  here is defined using pattern matching and domain specific language provided
+  by the play framework. This domain specific language will strip the parameters
+  inside the url and then pass to the result function defined in the
+  RecipeController. As shown in figure \ref{fig:router}, the ingr, from and to
+  are passed the the result function. Specifically, the data types of those
+  parameters need to be mentioned here. They are normal data types wrapped in a
+  data type called Option. The Option type is equivlant to the Maybe monad in
+  Haskell, it either has a value or nothing.
+  
+
+  \begin{figure}[H]
+    \centeringng
+    \centerline{\includegraphics[scale=0.7]{controller}}
+    \caption{Architecture of this project}
+    \label{fig:controller}
+  \end{figure}
+  Figure \ref{fig:controller} shows the implementation of the RecipeController.
+  This controller has two functions, the result function and the getRecipe
+  function. The result function will first do the pattern matching on the name
+  parameter as it contains the ingredients' name. If the name parameter contains
+  some value, then the getRecipe function will be called. Otherwise, the result
+  function will just return not found.
+
+  As for the getRecipe function, it takes three parameters, ingredients, from
+  and to. The from and to parameters are wrapped in Option data type as they are
+  optional. The getRecipe function will query edmame api as return the response
+  as the result.
+
+  \subsection{Frontend}
+  
   
   \section{Reflection}
   
