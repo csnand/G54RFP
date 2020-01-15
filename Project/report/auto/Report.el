@@ -18,6 +18,6 @@
     "float"
     "graphicx")
    (LaTeX-add-bibliographies
-    "../bibs/ref"))
+    "ref"))
  :latex)
 
